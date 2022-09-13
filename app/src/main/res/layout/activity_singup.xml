@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25273E"
+    tools:context=".SingupActivity" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/forgot">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:text="Sing up"
+            android:textColor="#fff"
+            android:textSize="15pt"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/botron"
+            android:hint="UserName"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#9E9D9D"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/botron"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColorHint="#9E9D9D"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/txt_confirmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/botron"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColorHint="#9E9D9D"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txt_password"
+            android:layout_alignBottom="@+id/txt_password"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="-179dp"
+            android:background="@drawable/botron_button"
+            android:gravity="center"
+            android:text="Sing up" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button2"
+            android:layout_marginTop="200dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="-30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button2"
+                android:gravity="center"
+                android:layout_marginRight="70dp"
+                android:text="  Already have a acccout"
+                android:textColor="#ffff" />
+
+            <Button
+                android:id="@+id/txt_singin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button2"
+                android:gravity="center"
+                android:text=" Sing in"
+                android:layout_marginLeft="20dp"
+                android:background="@android:color/transparent"
+                android:textColor="#E66262" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
